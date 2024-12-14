@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Set env
+        run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
       - name: Github Releases To Discord
         uses: SethCohen/github-releases-to-discord@v1.16.2
         with:
@@ -17,7 +19,7 @@ jobs:
           color: "15844367"
           username: "BCC Changelog"
           avatar_url: "https://bcc-scripts.com/logo.png"
-          content: "# New Release for BCC-utils! \n\n https://github.com/BryceCanyonCounty/bcc-utils"
+          content: "# New Release for BCC-utils (${{ env.RELEASE_VERSION }})! \n\n https://github.com/BryceCanyonCounty/bcc-utils"
           footer_title: "bcc-utils"
           footer_icon_url: "https://bcc-scripts.com/logo.png"
           footer_timestamp: false
