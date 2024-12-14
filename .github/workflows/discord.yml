@@ -14,12 +14,12 @@ jobs:
         uses: SethCohen/github-releases-to-discord@v1.16.2
         with:
           webhook_url: ${{ secrets.WEBHOOK_URL }}
-          color: "2105893"
-          username: "BCC Release"
-          avatar_url: "https://cdn.discordapp.com/avatars/487431320314576937/bd64361e4ba6313d561d54e78c9e7171.png"
-          content: "||@everyone||"
-          footer_title: "Changelog"
-          footer_icon_url: "https://cdn.discordapp.com/avatars/487431320314576937/bd64361e4ba6313d561d54e78c9e7171.png"
-          footer_timestamp: true
+          color: "15844367"
+          username: "BCC Changelog"
+          avatar_url: "https://private-avatars.githubusercontent.com/u/114133968?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQxNjkzMjAsIm5iZiI6MTczNDE2ODEyMCwicGF0aCI6Ii91LzExNDEzMzk2OCJ9.EDFilDZZCKu-e42cNibDLjxRggKGe4td-f0odbfO_To&s=200&v=4"
+          content: "# New Release for BCC-utils!"
+          footer_title: "https://github.com/BryceCanyonCounty/bcc-utils"
+          footer_icon_url: "https://private-avatars.githubusercontent.com/u/114133968?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQxNjkzMjAsIm5iZiI6MTczNDE2ODEyMCwicGF0aCI6Ii91LzExNDEzMzk2OCJ9.EDFilDZZCKu-e42cNibDLjxRggKGe4td-f0odbfO_To&s=200&v=4"
+          footer_timestamp: false
           max_description: "4096"
           reduce_headings: true
